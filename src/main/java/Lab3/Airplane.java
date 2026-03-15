@@ -18,4 +18,12 @@ public class Airplane {
         this.maxAltitude = maxAltitude;
         this.payload = payload;
     }
+    @Override
+    public String toString(){
+        return "Model:"+this.model+"\n"+
+                "Manufacturer:"+this.manufacturer+"\n"+
+                "Top Speed:"+this.topSpeed+" km/h\n"+
+                "Max Altitude:"+this.maxAltitude+" metres\n"+
+                "Payload:"+this.payload+" tonnes\n";
+    }
 }
