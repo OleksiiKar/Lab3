@@ -1,17 +1,17 @@
 package Lab3;
 
-public class Airplanes {
+public class Airplane {
     private String model;
     private String manufacturer;
     private Integer topSpeed;
     private Integer maxAltitude;
-    private Integer payload;
+    private Double payload;
 
-    public Airplanes(String model,
-                     String manufacturer,
-                     Integer topSpeed,
-                     Integer maxAltitude,
-                     Integer payload){
+    public Airplane(String model,
+                    String manufacturer,
+                    Integer topSpeed,
+                    Integer maxAltitude,
+                    Double payload){
         this.model = model;
         this.manufacturer = manufacturer;
         this.topSpeed = topSpeed;
