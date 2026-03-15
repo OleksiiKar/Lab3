@@ -12,6 +12,10 @@ public class Airplanes {
                      Integer topSpeed,
                      Integer maxAltitude,
                      Integer payload){
-        
+        this.model = model;
+        this.manufacturer = manufacturer;
+        this.topSpeed = topSpeed;
+        this.maxAltitude = maxAltitude;
+        this.payload = payload;
     }
 }
