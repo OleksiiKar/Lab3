@@ -32,11 +32,11 @@ public class Airplane {
         if (obj==null) return false;
         if (!(obj instanceof Airplane compObj)) return false;
 
-        return this.model==compObj.model
-                && this.manufacturer==compObj.manufacturer
-                && this.topSpeed==compObj.topSpeed
-                && this.maxAltitude==compObj.maxAltitude
-                && this.payload==compObj.payload;
+        return this.model.equals(compObj.model)
+                && this.manufacturer.equals(compObj.manufacturer)
+                && this.topSpeed.equals(compObj.topSpeed)
+                && this.maxAltitude.equals(compObj.maxAltitude)
+                && this.payload.equals(compObj.payload);
     }
     public Integer getTopSpeed(){
         return this.topSpeed;

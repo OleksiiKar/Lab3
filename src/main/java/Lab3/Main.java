@@ -20,6 +20,9 @@ public class Main {
         System.out.println("------Sorted by Altitude");
         garage.sort(Comparator.comparingInt(Airplane::getMaxAltitude));
         printObj(garage);
+        Airplane a = garage.get(0);
+        System.out.println(a);
+        System.out.println(a.equals(new Airplane("AH-225", "Antonov", 800, 12000, 250.0)));
     }
     public static void printObj(List<Airplane> items){
         for(Airplane a:items){
