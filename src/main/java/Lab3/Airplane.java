@@ -26,6 +26,18 @@ public class Airplane {
                 "Max Altitude:"+this.maxAltitude+" metres\n"+
                 "Payload:"+this.payload+" tonnes\n";
     }
+    @Override
+    public boolean equals(Object obj){
+        if (this==obj) return true;
+        if (obj==null) return false;
+        if (!(obj instanceof Airplane compObj)) return false;
+
+        return this.model==compObj.model
+                && this.manufacturer==compObj.manufacturer
+                && this.topSpeed==compObj.topSpeed
+                && this.maxAltitude==compObj.maxAltitude
+                && this.payload==compObj.payload;
+    }
     public Integer getTopSpeed(){
         return this.topSpeed;
     }

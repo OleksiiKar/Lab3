@@ -20,7 +20,6 @@ public class Main {
         System.out.println("------Sorted by Altitude");
         garage.sort(Comparator.comparingInt(Airplane::getMaxAltitude));
         printObj(garage);
-
     }
     public static void printObj(List<Airplane> items){
         for(Airplane a:items){
