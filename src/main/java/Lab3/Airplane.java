@@ -26,4 +26,10 @@ public class Airplane {
                 "Max Altitude:"+this.maxAltitude+" metres\n"+
                 "Payload:"+this.payload+" tonnes\n";
     }
+    public Integer getTopSpeed(){
+        return this.topSpeed;
+    }
+    public Integer getMaxAltitude(){
+        return this.maxAltitude;
+    }
 }
