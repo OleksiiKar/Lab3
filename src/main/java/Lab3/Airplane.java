@@ -53,4 +53,19 @@ public class Airplane {
     public Double getPayload(){
         return this.payload;
     }
+    public void setModel(String m){
+        this.model = m;
+    }
+    public void setManufacturer(String man){
+        this.manufacturer = man;
+    }
+    public void setTopSpeed(Integer ts){
+        this.topSpeed = ts;
+    }
+    public void setMaxAltitude(Integer ma){
+        this.maxAltitude = ma;
+    }
+    public void setPayload(Double p){
+        this.payload = p;
+    }
 }
