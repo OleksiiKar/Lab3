@@ -39,4 +39,15 @@ public class AirplaneTest {
         assertEquals(1000, airplane1.getMaxAltitude());
         assertEquals(10.0, airplane1.getPayload());
     }
+    @Test
+    void output(){
+        Airplane airplane1 = new Airplane("Test", "Test", 1000, 1000, 10.0);
+        String output = airplane1.toString();
+
+        assertTrue(output.contains("Model:Test"));
+        assertTrue(output.contains("Manufacturer:Test"));
+        assertTrue(output.contains("Top Speed:1000"));
+        assertTrue(output.contains("Max Altitude:1000"));
+        assertTrue(output.contains("Payload:10.0"));
+    }
 }
