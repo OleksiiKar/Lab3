@@ -24,6 +24,7 @@ public class AirplaneTest {
         airplane1.setTopSpeed(1100);
         airplane1.setMaxAltitude(900);
         airplane1.setPayload(12.0);
+
         assertEquals("Falcon", airplane1.getModel());
         assertEquals("RollsRoyce", airplane1.getManufacturer());
         assertEquals(1100, airplane1.getTopSpeed());
@@ -33,6 +34,7 @@ public class AirplaneTest {
     @Test
     void getValues(){
         Airplane airplane1 = new Airplane("Test", "Test", 1000, 1000, 10.0);
+        
         assertEquals("Test", airplane1.getModel());
         assertEquals("Test", airplane1.getManufacturer());
         assertEquals(1000, airplane1.getTopSpeed());
