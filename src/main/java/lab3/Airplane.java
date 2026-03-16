@@ -1,5 +1,5 @@
 package lab3;
-
+import java.util.Objects;
 public class Airplane {
     /** The model name of the airplane. */
     private String model;
@@ -54,11 +54,20 @@ public class Airplane {
         if (obj==null) return false;
         if (!(obj instanceof Airplane compObj)) return false;
 
-        return this.model.equals(compObj.model)
-                && this.manufacturer.equals(compObj.manufacturer)
-                && this.topSpeed.equals(compObj.topSpeed)
-                && this.maxAltitude.equals(compObj.maxAltitude)
-                && this.payload.equals(compObj.payload);
+        return Objects.equals(this.model, compObj.model)
+                && Objects.equals(this.manufacturer, compObj.manufacturer)
+                && Objects.equals(this.topSpeed, compObj.topSpeed)
+                && Objects.equals(this.maxAltitude, compObj.maxAltitude)
+                && Objects.equals(this.payload, compObj.payload);
+    }
+    /**
+     * Returns a hash code value for the airplane.
+     * This method is supported for the benefit of hash tables.
+     * @return a hash code value for this object
+     */
+    @Override
+    public int hashCode() {
+        return Objects.hash(model, manufacturer, topSpeed, maxAltitude, payload);
     }
     /**
      * Getter for model name of the airplane
