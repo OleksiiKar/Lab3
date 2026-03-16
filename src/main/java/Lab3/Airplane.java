@@ -38,10 +38,19 @@ public class Airplane {
                 && this.maxAltitude.equals(compObj.maxAltitude)
                 && this.payload.equals(compObj.payload);
     }
+    public String getModel(){
+        return this.model;
+    }
+    public String getManufacturer(){
+        return this.manufacturer;
+    }
     public Integer getTopSpeed(){
         return this.topSpeed;
     }
     public Integer getMaxAltitude(){
         return this.maxAltitude;
+    }
+    public Double getPayload(){
+        return this.payload;
     }
 }
