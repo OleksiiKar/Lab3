@@ -34,7 +34,7 @@ public class AirplaneTest {
     @Test
     void getValues(){
         Airplane airplane1 = new Airplane("Test", "Test", 1000, 1000, 10.0);
-        
+
         assertEquals("Test", airplane1.getModel());
         assertEquals("Test", airplane1.getManufacturer());
         assertEquals(1000, airplane1.getTopSpeed());
