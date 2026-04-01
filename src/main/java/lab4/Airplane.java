@@ -1,4 +1,4 @@
-package lab3;
+package lab4;
 import java.util.Objects;
 public class Airplane {
     /** The model name of the airplane. */
